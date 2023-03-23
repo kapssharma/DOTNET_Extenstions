@@ -43,7 +43,7 @@ namespace CSharp.Extenstions.Tests
         public void ToStringMMddyyyyhmm()
         {
             var dateTime = new DateTime(year: 2023, month: 02, day: 12, hour: 13, minute: 25, second: 30);
-            var output = dateTime.ToStringMMddyyyyhmm();
+            var output = dateTime.ToStringhmmt();
             Assert.IsTrue(output != null);
         }
 
