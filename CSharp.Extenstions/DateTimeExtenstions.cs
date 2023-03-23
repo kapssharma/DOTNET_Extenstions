@@ -88,10 +88,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy HH:mm 
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy HH:mm
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 23:25
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50</returns>
         public static string ToStringdddd_ddMMMMyyyyHHmm(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy HH:mm", separator, separator1);
@@ -99,10 +106,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy hh:mm
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy hh:mm
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 11:25
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50</returns>
         public static string ToStringdddd_ddMMMMyyyyhhmm(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy hh:mm", separator, separator1);
@@ -110,10 +124,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy HH:mm:ss
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy HH:mm:ss
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 23:25:10
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50</returns>
         public static string ToStringdddd_ddMMMMyyyyHHmmss(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy HH:mm:ss", separator, separator1);
@@ -121,10 +142,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy hh:mm:ss
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy hh:mm:ss
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 11:25:10
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50</returns>
         public static string ToStringdddd_ddMMMMyyyyhhmmss(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy hh:mm:ss", separator, separator1);
@@ -132,10 +160,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy HH:mm tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 23:25 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyHHmmtt(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy HH:mm tt", separator, separator1);
@@ -143,10 +178,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy HH:mm t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy HH:mm t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 23:25 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyHHmmt(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy HH:mm t", separator, separator1);
@@ -154,32 +196,55 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy hh:mm t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy hh:mm t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 11:25 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyhhmmt(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy hh:mm t", separator, separator1);
             return @this.ToString(format);
         }
 
+
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy HH:mm:ss t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy HH:mm:ss tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 23:25:12 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyHHmmsstt(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy HH:mm:ss tt", separator, separator1);
             return @this.ToString(format);
         }
 
+
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy HH:mm:ss t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy HH:mm:ss tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 23:25:12 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyHHmmsst(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy HH:mm:ss t", separator, separator1);
@@ -187,10 +252,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy hh:mm:ss tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy hh:mm:ss tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 11:25:12 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyhhmmsstt(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy hh:mm:ss tt", separator, separator1);
@@ -198,10 +270,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format dddd, dd MMMM yyyy hh:mm:ss t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be dddd, dd MMMM yyyy hh:mm:ss t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is comma and param2 (separate1) default value is empty space.
+        /// </code>
+        /// e.g Thursday, 23 March 2023 11:25:12 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringdddd_ddMMMMyyyyhhmmsst(this DateTime @this, string separator = ",", string separator1 = " ")
         {
             var format = string.Format("dddd{0} dd{1}MMMM{1}yyyy hh:mm:ss t", separator, separator1);
@@ -209,11 +288,19 @@ namespace CSharp.Extenstions
         }
 
         // Month day and Year.
+
         /// <summary>
-        ///     A DateTime extension method that return as string
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format MM/dd/yyyy</returns>
         public static string ToStringMMddyyyy(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy", separator);
@@ -221,10 +308,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy HH:mm
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHHmm(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy HH:mm", separator);
@@ -232,10 +326,17 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy hh:mm
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhhmm(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy hh:mm", separator);
@@ -243,65 +344,108 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy HH:mm tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHHmmtt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy HH:mm tt", separator);
             return @this.ToString(format);
         }
 
+
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy hh:mm tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhhmmtt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy hh:mm tt", separator);
             return @this.ToString(format);
         }
 
+
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm:ss tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy HH:mm:ss tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25:12 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHHmmsstt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy HH:mm:ss tt", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm:ss tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy hh:mm:ss tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25:12 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhhmmsstt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy hh:mm:ss tt", separator);
             return @this.ToString(format);
         }
 
+
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy HH:mm:ss t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHHmmt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy HH:mm t", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy hh:mm:ss t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhhmmt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy hh:mm t", separator);
@@ -309,131 +453,204 @@ namespace CSharp.Extenstions
         }
 
         /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm:ss tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy HH:mm:ss tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25:12 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHHmmsst(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy HH:mm:ss t", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm:ss tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy hh:mm:ss t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25:12 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhhmmsst(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy hh:mm:ss t", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy H:mm
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy H:mm
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHmm(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy H:mm", separator);
             return @this.ToString(format);
         }
-        
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy H:mm
+
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy h:mm
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhmm(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy h:mm", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy H:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy H:mm tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHmmtt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy H:mm tt", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy h:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy h:mm tt
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25 PM
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhmmtt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy h:mm tt", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy H:mm t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy H:mm t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHmmt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy H:mm t", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy h:mm t
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy h:mm t
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25 P
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhmmt(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy h:mm t", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy HH:mm:ss
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25:12
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHHmmss(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy HH:mm:ss", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy hh:mm:ss
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25:12
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhhmmss(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy hh:mm:ss", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy H:mm:ss
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 23:25:12
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyHmmss(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy H:mm:ss", separator);
             return @this.ToString(format);
         }
 
-        /// <summary>
-        ///     A DateTime extension method that return as string format MM/dd/yyyy HH:mm tt
+        /// A DateTime extension method that return string 
+        /// <example>
+        /// <code>
+        /// Return string will be MM/dd/yyyy h:mm:ss
+        /// </code>
+        /// <code>
+        /// param1 (separator) default value is '/' 
+        /// </code>
+        /// e.g 03/23/2023 11:25:12
+        /// </example>
         /// </summary>
-        /// <param name="@this">The @this to act on.</param>
-        /// <returns>return a DateTime object as string format Friday, 29 May 2023 05:50 AM</returns>
         public static string ToStringMMddyyyyhmmss(this DateTime @this, string separator = "/")
         {
             var format = string.Format("MM{0}dd{0}yyyy h:mm:ss", separator);
