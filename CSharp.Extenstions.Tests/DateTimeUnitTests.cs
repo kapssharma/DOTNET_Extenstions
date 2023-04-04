@@ -6,25 +6,24 @@ namespace CSharp.Extenstions.Tests
 {
     public class DateTimeUnitTests
     {
+        DateTime dateTime;
         [SetUp]
         public void Setup()
         {
-            
+            dateTime = new DateTime(year: 2023, month: 02, day: 12, hour: 13, minute: 25, second: 30);
         }
 
         [Test]
-        public void DateTimeToyymmddhhmmss()
+        public void ToStringdddd_ddMMMMyyyy()
         {
-            var dateTime = DateTime.Now;
-            var output = "";// dateTime.DateTimeToyymmddhhmmss();
-            Assert.IsTrue(output.Length == 0);
+            var output = dateTime.ToStringdddd_ddMMMMyyyy();
+            Assert.IsTrue(output != null);
         }
 
 
         [Test]
         public void ToStringMMddyyyy()
         {
-            var dateTime = DateTime.Now;
             var output = dateTime.ToStringdddd_ddMMMMyyyy("/");
             Assert.IsTrue(output != null);
         }
@@ -33,7 +32,6 @@ namespace CSharp.Extenstions.Tests
         [Test]
         public void ToStringMMddyyyyHmm()
         {
-            var dateTime = new DateTime(year: 2023, month: 02, day: 12, hour: 13, minute: 25, second: 30);
             var output = dateTime.ToStringMyyyy();
             Assert.IsTrue(output != null);
         }
@@ -42,7 +40,6 @@ namespace CSharp.Extenstions.Tests
         [Test]
         public void ToStringMMddyyyyhmm()
         {
-            var dateTime = new DateTime(year: 2023, month: 02, day: 12, hour: 13, minute: 25, second: 30);
             var output = dateTime.ToStringMMddyyyyhmm();
             Assert.IsTrue(output != null);
         }

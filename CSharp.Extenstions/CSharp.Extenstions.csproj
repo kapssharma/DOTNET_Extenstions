@@ -1,8 +1,34 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>CSharp.Extenstions</PackageId>
+    <Version>1.0.0.1</Version>
+    <Authors>Kapil Sharma</Authors>
+    <Company>Digisoft Solution</Company>
+    <Product>CSharp.Extenstions</Product>
+    <Description>CSharp Extenstions Include extenstion method for DateTime, We can use in application where we want different type of date formats.</Description>
+    <Copyright>Copyright ©2023 Digisoft Solution</Copyright>
+    <PackageProjectUrl>https://digisoftsolution.in/</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Extenstions; DateTime; Integer; Digisoft Solution; Kapil Sharma</PackageTags>
+    <RepositoryUrl>https://github.com/kapssharma/DOTNET_Extenstions</RepositoryUrl>
+    <PackageLicenseFile>C:\Users\kapil\source\repos\kapssharma\DOTNET_Extenstions\CSharp.Extenstions\licenses\LICENSE.txt</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	  <PackageReleaseNotes>This version has some new integer extenstions methods. Which we can use in our coding to make code easier and readable.</PackageReleaseNotes>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+	<ItemGroup>
+		<None Include="licenses\LICENSE.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
 </Project>
